@@ -1,0 +1,361 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald|Roboto+Condensed|Archivo+Narrow');
+@font-face {
+    font-family: Aileron-Heavy;
+    src: url('../fonts/Aileron-Heavy.otf');
+}
+
+@font-face {
+    font-family: Aileron-Regular;
+    src: url('../fonts/Aileron-Regular.otf');
+}
+
+/* ==========================================================================
+   CAROUSEL. 
+   ========================================================================== */
+.main-slider{
+    z-index: 0;
+    height: 850px;
+}
+
+.main-nav{
+    z-index: 2; 
+}
+
+.carousel,
+.item,
+.active {
+    height: 100%;
+}
+
+.carousel-caption h1{
+    font-size: 50px;
+    font-family: Aileron-Heavy;
+    text-align: left;
+    text-decoration: none;
+}
+
+.carousel-caption p{
+    font-size: 18px;
+    font-family: Aileron-Regular;
+    margin-bottom: 20px;
+    text-align: left;
+    color: #FFF;
+}
+
+.carousel-inner {
+    height: 850px;
+    background: #000;
+}
+
+.carousel-caption{
+    padding-bottom:310px;
+}
+
+.fill {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+.btn-transparent {
+  background: transparent;
+  color: #F2A81D;
+  border: 2px solid #F2A81D;
+  transition: 0.3s;
+}
+.btn-transparent:hover {
+  background-color: #fff;
+    border: 2px solid #FFF;
+}
+
+.btn-large {
+  padding: 8px 22px;
+  font-size: 18px;
+}
+
+.inner-btn{
+    text-align: left;
+    display: inline-block;
+    margin-right: 20px;
+    float: left;
+}
+
+.btn-transparent {
+  color: #FFF;
+  background-color: transparent;
+  border-color: #FFF;
+  transition: 0.3s;
+}
+.btn-transparent:focus,
+.btn-transparent.focus {
+  color: #FFF;
+  background-color: #F2AB26;
+  border-color: #F2AB26;
+}
+.btn-transparent:hover {
+  color: #FFF;
+  background-color: #F2AB26;
+  border-color: #F2AB26;
+}
+.btn-transparent:active,
+.btn-transparent.active,
+.open > .dropdown-toggle.btn-transparent {
+  color: #FFF;
+  background-color: #F2AB26;
+  border-color: #F2AB26;
+}
+
+.animated {
+  -webkit-animation-duration: 1.5s;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fadeInRight {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(100px, 0, 0);
+    transform: translate3d(100px, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(100px, 0, 0);
+    transform: translate3d(100px, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+.fadeInRight {
+  -webkit-animation-name: fadeInRight;
+  animation-name: fadeInRight;
+}
+
+.carousel-indicators {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  z-index: 15;
+  width: 60%;
+  padding-left: 0;
+  margin-left: -30%;
+  text-align: center;
+  list-style: none;
+}
+.carousel-indicators li {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  margin: 1px;
+  text-indent: -999px;
+  cursor: pointer;
+  background-color: #000 \9;
+  background-color: rgba(0, 0, 0, 0);
+  border: 2px solid #fff;
+  border-radius: 10px;
+}
+.carousel-indicators .active {
+  width: 17px;
+  height: 17px;
+  margin: 0;
+  background: #fff;
+  border: #fff solid 2px;
+}
+
+.left .carousel-control .icon-prev{
+    color: #F2A81D;
+}
+
+.carousel-control.left, .carousel-control.right {
+    background-image: none
+}
+
+.front-about h6{
+    text-transform: uppercase;
+    color: #F2AB26;
+    font-size: 14px;
+}
+
+.front-about p{
+    line-height: 1.8;
+    margin: 10px 0px 10px 0px;
+}
+
+.front-contact{
+    height: 100%;
+    background: #FAFCFC;
+    margin-top: -125px;
+    padding: 0px;
+}
+
+.top-label{
+    background: #F2AB26;
+    height: 60px;
+    padding: 10px;
+    text-align: center;
+    color: #FFF;
+}
+
+.contact-container{
+    padding: 30px;
+}
+
+.message-box{
+    padding: 15px 15px 0px 15px;
+}
+
+.span-industry{
+    margin-top: 40px;
+}
+
+.span-industry p{
+    margin-top: -5px;
+}
+
+.inner-about-info{
+    text-align: left;
+}
+
+.industry-about-icon{
+    width: 50px;
+}
+
+.industry-about-icon img{
+    width: 100%;
+}
+
+.inner-about-info h5{
+    line-height: 2;
+}
+
+.thumbnail-services {
+  display: block;
+  margin: 20px 0px 20px 0px;
+  line-height: 1.42857143;
+  background-color: #fff;
+  border-radius: 4px;
+  -webkit-transition: border .2s ease-in-out;
+       -o-transition: border .2s ease-in-out;
+          transition: border .2s ease-in-out;
+}
+.thumbnail-services > img,
+.thumbnail-services a > img {
+  margin-right: auto;
+  margin-left: auto;
+  width: 100%;
+}
+a.thumbnail-services:hover,
+a.thumbnail-services:focus,
+a.thumbnail-services.active {
+  border-color: #337ab7;
+}
+
+.thumbnail-services .img-caption{
+    margin-top: -100px;
+    color: #FFF;
+    padding: 0px 20px 0px 20px;
+    transition: 0.3s;
+}
+
+.thumbnail-services .img-caption p{
+    color: #FFF;
+}
+
+.thumbnail-services .img-caption h6{
+    font-size: 13px;
+    color: #FFF;
+    line-height: 3;
+}
+
+.thumbnail-services:hover .img-caption{
+    margin-left: 20px;
+}
+
+.counter-parallax { 
+    background-image: url("../img/images/image19.jpg");
+    height: 400px; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media (max-width:992px) {
+.carousel-caption h1{
+    font-size: 40px;
+}
+
+.carousel-caption p{
+    font-size: 17px;
+}
+    
+.front-contact{
+    height: 100%;
+    background: #FAFCFC;
+    margin-top: 30px;
+    padding: 0px;
+}
+    
+.top-label{
+    height: 55px;
+    padding: 10px;
+}
+    
+}
+
+@media (max-width:768px) {
+.carousel-caption h1{
+    font-size: 35px;
+}
+    
+.main-slider{
+    height: 520px;
+}
+    
+.carousel-inner {
+  height: 520px;
+}
+    
+.carousel-caption{
+    padding-bottom:120px;
+}
+    
+.carousel-control.left, .carousel-control.right {
+    background-image: none;
+    margin-top: 60px;
+}
+  
+}
+
+@media (max-width:576px) {
+.carousel-caption h1{
+    font-size: 25px;
+   
+}
+  
+.carousel-caption p{
+    font-size: 14px;
+}
+    
+.btn, .btn-large {
+  padding: 4px 12px;
+  font-size: 14px;
+}
+    
+}

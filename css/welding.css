@@ -1,0 +1,525 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald|Roboto+Condensed|Archivo+Narrow');
+@font-face {
+    font-family: Aileron-Heavy;
+    src: url('../fonts/Aileron-Heavy.otf');
+}
+
+@font-face {
+    font-family: Aileron-Regular;
+    src: url('../fonts/Aileron-Regular.otf');
+}
+
+/* ==========================================================================
+   CAROUSEL. 
+   ========================================================================== */
+.main-slider{
+    z-index: 0;
+    height: 850px;
+}
+
+.main-nav{
+    z-index: 2; 
+}
+
+.carousel,
+.item,
+.active {
+    height: 100%;
+}
+
+.carousel-caption h1{
+    font-size: 50px;
+    font-family: Aileron-Heavy;
+    text-align: left;
+    text-decoration: none;
+}
+
+.carousel-caption p{
+    font-size: 18px;
+    font-family: Aileron-Regular;
+    margin-bottom: 20px;
+    text-align: left;
+    color: #FFF;
+}
+
+.carousel-inner {
+    height: 850px;
+    background: #000;
+}
+
+.carousel-caption{
+    padding-bottom:310px;
+}
+
+.fill {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+.btn-transparent {
+  background: transparent;
+  color: #F2A81D;
+  border: 2px solid #F2A81D;
+  transition: 0.3s;
+}
+.btn-transparent:hover {
+  background-color: #fff;
+    border: 2px solid #FFF;
+}
+
+.btn-large {
+  padding: 8px 22px;
+  font-size: 18px;
+}
+
+.inner-btn{
+    text-align: left;
+    display: inline-block;
+    margin-right: 20px;
+    float: left;
+}
+
+.btn-transparent {
+  color: #FFF;
+  background-color: transparent;
+  border-color: #FFF;
+  transition: 0.3s;
+}
+.btn-transparent:focus,
+.btn-transparent.focus {
+  color: #FFF;
+  background-color: #F2AB26;
+  border-color: #F2AB26;
+}
+.btn-transparent:hover {
+  color: #FFF;
+  background-color: #F2AB26;
+  border-color: #F2AB26;
+}
+.btn-transparent:active,
+.btn-transparent.active,
+.open > .dropdown-toggle.btn-transparent {
+  color: #FFF;
+  background-color: #F2AB26;
+  border-color: #F2AB26;
+}
+
+
+.animated {
+  -webkit-animation-duration: 1.5s;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fadeInRight {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(100px, 0, 0);
+    transform: translate3d(100px, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(100px, 0, 0);
+    transform: translate3d(100px, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+.fadeInRight {
+  -webkit-animation-name: fadeInRight;
+  animation-name: fadeInRight;
+}
+
+.carousel-indicators .active{
+    
+}
+
+.carousel-indicators {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  z-index: 15;
+  width: 60%;
+  padding-left: 0;
+  margin-left: -30%;
+  text-align: center;
+  list-style: none;
+}
+.carousel-indicators li {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  margin: 1px;
+  text-indent: -999px;
+  cursor: pointer;
+  background-color: #000 \9;
+  background-color: rgba(0, 0, 0, 0);
+  border: 2px solid #fff;
+  border-radius: 10px;
+}
+.carousel-indicators .active {
+  width: 17px;
+  height: 17px;
+  margin: 0;
+  background: #fff;
+  border: #fff solid 2px;
+}
+
+.left .carousel-control .icon-prev{
+    color: #F2A81D;
+}
+
+.carousel-control.left, .carousel-control.right {
+    background-image: none
+}
+
+.front-service-1, .front-service-2, .front-service-3{
+	width: 100%;
+    height: 300px;
+    background: #fff;
+	box-shadow: 0 15px 30px 0 rgba(0,0,0,0.11), 0 5px 15px 0 rgba(0,0,0,0.08);
+	transition: 0.8s;
+	padding: 50px 20px 50px 20px;
+}
+
+.front-service-1, .front-service-2, .front-service-3 h3{
+	text-align: center;
+    line-height: 2;
+}
+
+
+.front-service-1 h1{
+	text-align: center;
+    line-height: 2;
+}
+
+.front-service-1 h2{
+	text-align: center;
+    line-height: 2;
+}
+
+.front-service-1 h3{
+	text-align: center;
+    line-height: 2;
+}
+
+.front-service-1 p{
+	text-align: center;
+    line-height: 1.4;
+    color: #808080;
+}
+
+.front-service-2 p{
+	text-align: center;
+    line-height: 1.4;
+    color: #808080;
+}
+
+.front-service-3 p{
+	text-align: center;
+    line-height: 1.4;
+    color: #808080;
+}
+
+.front-service-1:hover{
+	width: 100%;
+    height: 300px;
+    background-image: url("../img/images/welding/image45.jpg");
+	background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.front-service-2:hover{
+    height: 300px;
+    background-image: url("../img/images/welding/welding-machine.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.front-service-3:hover{
+    height: 300px;
+    background-image: url("../img/images/welding/welding-machine-2.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.service-icon{
+	width: 64px;
+	margin: auto;
+}
+
+
+.block-title{
+    margin-bottom: 30px;
+}
+
+.block-title p{
+    text-align: center;
+    color: #999;
+}
+
+
+.inner-image{
+	padding: 0px;
+	height: 400px;
+    background-image: url("../img/images/welding/inner-image.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.inner-image-2{
+	padding: 0px;
+	height: 400px;
+    background-image: url("../img/images/welding/inner-image-2.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.inner-image-3{
+	padding: 0px;
+	height: 400px;
+    background-image: url("../img/images/welding/inner-image-3.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.inner-info{
+	background: #333;
+	padding: 100px 30px 100px 30px;
+	height: 400px;
+}
+
+.inner-info h2{
+	color: #FFF;
+    margin-bottom: 10px;
+}
+
+.inner-info p{
+	color: #FFF;
+    margin-bottom: 15px;
+}
+
+.inner-info .btn-more{
+	margin-top: 20px;
+}
+
+
+.btn-custom {
+  color: #FFF;
+  background-color: #F2AB26;
+  border-color: #F2AB26;
+  transition: 0.3s;
+}
+.btn-custom:focus,
+.btn-custom.focus {
+  color: #FFF;
+  background-color: #F2AB26;
+  border-color: #F2AB26;
+}
+.btn-custom:hover {
+  color: #FFF;
+  background-color: #F0542D;
+  border-color: #F0542D;
+}
+.btn-custom:active,
+.btn-custom.active,
+.open > .dropdown-toggle.btn-custom {
+  color: #FFF;
+  background-color: #F2AB26;
+  border-color: #F2AB26;
+}
+
+/* ========== LATES NEWS FRONT. ========== */
+.news-front {
+  display: block;
+  margin-bottom: 20px;
+  line-height: 1.42857143;
+  background-color: #FFF;
+  border: solid 1px #f0f0f0;
+  border-radius: 4px;
+  -webkit-transition: border .2s ease-in-out;
+       -o-transition: border .2s ease-in-out;
+          transition: border .2s ease-in-out;
+}
+.news-front > img,
+.news-front a > img {
+  margin-right: auto;
+  margin-left: auto;
+}
+a.news-front:hover,
+a.news-front:focus,
+a.news-front.active {
+  border-color: #337ab7;
+}
+.news-front .caption {
+  padding: 9px;
+  color: #333;
+}
+
+.news-front h3{
+    text-align: center;
+}
+
+.news-front p{
+    text-align: center;
+    margin: 10px 0px 15px 0px;
+}
+
+.front-post-preview{
+  position: relative;
+}
+
+.front-post-preview img{
+        width: 100%;
+}
+
+.post-date{
+    position: absolute;
+    width: 100px;
+    height: 40px;
+    padding: 5px;
+    background: #F2A81D;
+    bottom: 7px;
+    right: 0;
+}
+
+.post-date h5{
+    color: #FFF;
+    text-align: center;
+}
+
+.post-date span{
+    font-weight: 500;
+    color: #00354A;
+}
+
+.block-title{
+    margin-bottom: 30px;
+}
+
+.block-title p{
+    text-align: center;
+    color: #999;
+}
+
+@media (max-width:1200px) {
+.inner-info{
+	background: #333;
+	padding: 70px 30px 70px 30px;
+	height: 300px;
+}   
+    
+.inner-image, .inner-image-2, .inner-image-3{
+	height: 300px;
+}    
+    
+}
+
+@media (max-width:1024px) {
+.front-service-1, .front-service-2, .front-service-3{
+    height: 100%;
+	padding: 50px 20px 70px 20px;
+}
+    
+.front-service-1:hover{
+    height: 100%;
+}
+
+.front-service-2:hover{
+    height: 100%;
+}
+
+.front-service-3:hover{
+    height: 100%;
+}
+ 
+}
+
+
+
+@media (max-width:992px) {
+.carousel-caption h1{
+    font-size: 40px;
+}
+
+.carousel-caption p{
+    font-size: 17px;
+}
+    
+.inner-info{
+	padding: 50px 30px 50px 30px;
+    height: 100%;
+}   
+    
+.inner-image, .inner-image-2, .inner-image-3{
+	height: 300px;
+}  
+    
+.responsive-center{
+    margin: 20px 0px 20px 0px;
+}
+ 
+}
+
+@media (max-width:768px) {
+.carousel-caption h1{
+    font-size: 35px;
+}
+    
+.main-slider{
+    height: 520px;
+}
+    
+.carousel-inner {
+  height: 520px;
+}
+    
+.carousel-caption{
+    padding-bottom:120px;
+}
+    
+.carousel-control.left, .carousel-control.right {
+    background-image: none;
+    margin-top: 60px;
+}
+  
+}
+
+@media (max-width:576px) {
+.carousel-caption h1{
+    font-size: 25px;
+}
+.carousel-caption p{
+    font-size: 14px;
+}
+    
+.btn, .btn-large {
+  padding: 4px 12px;
+  font-size: 14px;
+}
+    
+}

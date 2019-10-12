@@ -1,0 +1,429 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald|Roboto+Condensed|Archivo+Narrow');
+@font-face {
+    font-family: Aileron-Heavy;
+    src: url('../fonts/Aileron-Heavy.otf');
+}
+
+@font-face {
+    font-family: Aileron-Regular;
+    src: url('../fonts/Aileron-Regular.otf');
+}
+
+/* ==========================================================================
+   CAROUSEL. 
+   ========================================================================== */
+.main-slider{
+    z-index: 0;
+    height: 850px;
+}
+
+.main-nav{
+    z-index: 2; 
+}
+
+.carousel,
+.item,
+.active {
+    height: 100%;
+}
+
+.carousel-caption h1{
+    font-size: 50px;
+    font-family: Aileron-Heavy;
+    text-align: left;
+    text-decoration: none;
+}
+
+.carousel-caption p{
+    font-size: 18px;
+    font-family: Aileron-Regular;
+    margin-bottom: 20px;
+    text-align: left;
+    color: #FFF;
+}
+
+.carousel-inner {
+    height: 850px;
+    background: #000;
+}
+
+.carousel-caption{
+    padding-bottom:310px;
+}
+
+.fill {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+.btn-transparent {
+  background: transparent;
+  color: #F2A81D;
+  border: 2px solid #F2A81D;
+  transition: 0.3s;
+}
+.btn-transparent:hover {
+  background-color: #fff;
+    border: 2px solid #FFF;
+}
+
+.btn-large {
+  padding: 8px 22px;
+  font-size: 18px;
+}
+
+.inner-btn{
+    text-align: left;
+    display: inline-block;
+    margin-right: 20px;
+    float: left;
+}
+
+.btn-transparent {
+  color: #FFF;
+  background-color: transparent;
+  border-color: #FFF;
+  transition: 0.3s;
+}
+.btn-transparent:focus,
+.btn-transparent.focus {
+  color: #FFF;
+  background-color: #F2AB26;
+  border-color: #F2AB26;
+}
+.btn-transparent:hover {
+  color: #FFF;
+  background-color: #F2AB26;
+  border-color: #F2AB26;
+}
+.btn-transparent:active,
+.btn-transparent.active,
+.open > .dropdown-toggle.btn-transparent {
+  color: #FFF;
+  background-color: #F2AB26;
+  border-color: #F2AB26;
+}
+
+
+.animated {
+  -webkit-animation-duration: 1.5s;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fadeInRight {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(100px, 0, 0);
+    transform: translate3d(100px, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(100px, 0, 0);
+    transform: translate3d(100px, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+.fadeInRight {
+  -webkit-animation-name: fadeInRight;
+  animation-name: fadeInRight;
+}
+
+.carousel-indicators .active{
+    
+}
+
+.carousel-indicators {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  z-index: 15;
+  width: 60%;
+  padding-left: 0;
+  margin-left: -30%;
+  text-align: center;
+  list-style: none;
+}
+.carousel-indicators li {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  margin: 1px;
+  text-indent: -999px;
+  cursor: pointer;
+  background-color: #000 \9;
+  background-color: rgba(0, 0, 0, 0);
+  border: 2px solid #fff;
+  border-radius: 10px;
+}
+.carousel-indicators .active {
+  width: 17px;
+  height: 17px;
+  margin: 0;
+  background: #fff;
+  border: #fff solid 2px;
+}
+
+.left .carousel-control .icon-prev{
+    color: #F2A81D;
+}
+
+.carousel-control.left, .carousel-control.right{
+    background-image: none
+}
+
+.mining-about h6{
+    font-size: 14px;
+    color: #F2AB26;
+}
+
+.mining-about h1{
+    line-height: 1.2;
+    margin: 5px 0px 20px; 0px;
+}
+
+.mining-about p{
+    line-height: 1.7;
+}
+
+.inner-mining{
+    margin: 20px 0px 20px 0px;
+    clear: both;
+}
+
+.mining-icon{
+    width: 50px;
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 30px;
+}
+
+.mining-icon img{
+    width: 100%;
+}
+
+.energy-services-pic img{
+    width: 100%;
+}
+
+.mining-parallax { 
+    background-image: url("../img/images/mining/img6.jpg");
+    height: 450px; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.parallax-content{
+    float: right;
+    bottom: 50px;
+    position: absolute;
+    color: #FFF;
+    max-width: 650px;
+}
+
+.parallax-content h1{
+    font-weight: 600;
+    font-size: 50px;
+}
+
+.parallax-content p{
+    color: #FFF;
+}
+
+.counter-facts{
+    margin-top: 30px;
+}
+
+.inner-facts{
+    width: 200px;
+    height: 70px;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.inner-facts .counter{
+    font-size: 30px;
+}
+
+.facts-icon{
+    float: left;
+    margin-right: 15px;
+    width: 40px;
+}
+
+.facts-icon img{
+    width: 100%;
+}
+
+.inner-facts .counter{
+    margin: 0px;
+    text-align: left;
+    padding: 0px;
+    color: #FFF;
+    font-weight: 600;
+}
+
+.inner-facts p{
+    margin-top: 5px;
+}
+
+.about-front-mining{
+    margin-top: 50px
+}
+
+.about-front-mining h6{
+    font-size: 16px;
+    margin: 10px 0px 10px 0px;
+    color: #666;
+}
+
+.about-front-mining p{
+    text-align: left;
+    color: #999;
+    margin-bottom: 20px;
+}
+
+
+@media (max-width:1200px) {
+    
+.about-front-mining{
+    margin-top: 0px
+}
+    
+}
+
+@media (max-width:992px) {
+.carousel-caption h1{
+    font-size: 40px;
+}
+
+.carousel-caption p{
+    font-size: 17px;
+}
+    
+.responsive-top-padding{
+    padding-top: 30px;
+}
+    
+.responsive-bottom-padding{
+    padding-bottom: 30px;
+}
+    
+.mining-about{
+    margin-bottom: 20px;
+}
+    
+.inner-mining{
+    margin: 0px;
+    clear: both;
+    height: 80px;
+ 
+    padding: 15px 0px 15px 0px;
+}
+ 
+}
+
+@media (max-width:768px) {
+.carousel-caption h1{
+    font-size: 35px;
+}
+    
+.main-slider{
+    height: 520px;
+}
+    
+.carousel-inner {
+  height: 520px;
+}
+    
+.carousel-caption{
+    padding-bottom:120px;
+}
+    
+.carousel-control.left, .carousel-control.right {
+    background-image: none;
+    margin-top: 60px;
+}
+    
+.parallax-content h1{
+    font-size: 30px;
+    line-height: 1.4
+}
+    
+.parallax-content{
+    float: right;
+    bottom: 50px;
+    position: absolute;
+    color: #FFF;
+    max-width: 100%;
+}
+    
+.parallax-content p{
+    font-size: 13px;
+}
+  
+}
+
+@media (max-width:576px) {
+.carousel-caption h1{
+    font-size: 25px;
+}
+.carousel-caption p{
+    font-size: 14px;
+}
+    
+.btn, .btn-large {
+  padding: 4px 12px;
+  font-size: 14px;
+}
+    
+.parallax-content{
+    float: right;
+    bottom: 10px;
+    position: absolute;
+    color: #FFF;
+    max-width: 100%;
+}
+
+.mining-parallax { 
+    height: 550px; 
+}
+    
+.inner-facts{
+    width: 200px;
+    height: 70px;
+    display: block;
+    margin: 15px 0px 15px 0px;
+}
+    
+.inner-facts .counter{
+    font-size: 30px;
+}
+    
+.inner-facts p{
+    margin-top: 0px;
+}
+    
+}

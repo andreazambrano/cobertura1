@@ -1,0 +1,413 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald|Roboto+Condensed|Archivo+Narrow');
+@font-face {
+    font-family: Aileron-Heavy;
+    src: url('../fonts/Aileron-Heavy.otf');
+}
+
+@font-face {
+    font-family: Aileron-Regular;
+    src: url('../fonts/Aileron-Regular.otf');
+}
+
+/* ==========================================================================
+   CAROUSEL. 
+   ========================================================================== */
+.main-slider{
+    z-index: 0;
+    height: 850px;
+}
+
+.main-nav{
+    z-index: 2; 
+}
+
+.carousel,
+.item,
+.active {
+    height: 100%;
+}
+
+.carousel-caption h1{
+    font-size: 50px;
+    font-family: Aileron-Heavy;
+    text-align: left;
+    text-decoration: none;
+}
+
+.carousel-caption p{
+    font-size: 18px;
+    font-family: Aileron-Regular;
+    margin-bottom: 20px;
+    text-align: left;
+    color: #FFF;
+}
+
+.carousel-inner {
+    height: 850px;
+    background: #000;
+}
+
+.carousel-caption{
+    padding-bottom:310px;
+}
+
+.fill {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+.btn-transparent {
+  background: transparent;
+  color: #F2A81D;
+  border: 2px solid #F2A81D;
+  transition: 0.3s;
+}
+.btn-transparent:hover {
+  background-color: #fff;
+    border: 2px solid #FFF;
+}
+
+.btn-large {
+  padding: 8px 22px;
+  font-size: 18px;
+}
+
+.inner-btn{
+    text-align: left;
+    display: inline-block;
+    margin-right: 20px;
+    float: left;
+}
+
+.btn-transparent {
+  color: #FFF;
+  background-color: transparent;
+  border-color: #FFF;
+  transition: 0.3s;
+}
+.btn-transparent:focus,
+.btn-transparent.focus {
+  color: #FFF;
+  background-color: #F2AB26;
+  border-color: #F2AB26;
+}
+.btn-transparent:hover {
+  color: #FFF;
+  background-color: #F2AB26;
+  border-color: #F2AB26;
+}
+.btn-transparent:active,
+.btn-transparent.active,
+.open > .dropdown-toggle.btn-transparent {
+  color: #FFF;
+  background-color: #F2AB26;
+  border-color: #F2AB26;
+}
+
+
+.animated {
+  -webkit-animation-duration: 1.5s;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fadeInRight {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(100px, 0, 0);
+    transform: translate3d(100px, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(100px, 0, 0);
+    transform: translate3d(100px, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+.fadeInRight {
+  -webkit-animation-name: fadeInRight;
+  animation-name: fadeInRight;
+}
+
+.carousel-indicators .active{
+    
+}
+
+.carousel-indicators {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  z-index: 15;
+  width: 60%;
+  padding-left: 0;
+  margin-left: -30%;
+  text-align: center;
+  list-style: none;
+}
+.carousel-indicators li {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  margin: 1px;
+  text-indent: -999px;
+  cursor: pointer;
+  background-color: #000 \9;
+  background-color: rgba(0, 0, 0, 0);
+  border: 2px solid #fff;
+  border-radius: 10px;
+}
+.carousel-indicators .active {
+  width: 17px;
+  height: 17px;
+  margin: 0;
+  background: #fff;
+  border: #fff solid 2px;
+}
+
+.left .carousel-control .icon-prev{
+    color: #F2A81D;
+}
+
+.carousel-control.left, .carousel-control.right {
+    background-image: none
+}
+
+
+.about-frontpage{
+    margin-top: 20px;
+}
+
+.about-frontpage p{
+    line-height: 1.7;
+    color: #808080;
+    margin: 10px 0px 30px 0px;
+}
+
+.front-picture img{
+    width: 100%;
+}
+
+.construction-icon{
+    float: left;
+    margin-right: 20px;
+    width: 50px;
+    height: 100px;
+}
+
+.construction-icon img{
+    width: 100%;
+}
+
+.inner-quick-services h5{
+    font-size: 18px;
+}
+
+.inner-quick-services p{
+    margin: 0px;
+}
+
+.inner-quick-services{
+    margin: 30px 20px 30px 20px;
+    clear: both;
+}
+
+.front-stripe{
+    padding: 0px 10px 0px 10px;
+    color: #FFF;
+    overflow: hidden;
+}
+
+.front-stripe p{
+    color: #FFF;
+}
+
+.stripe-icon{
+    float: left;
+    margin-right: 20px;
+    width: 55px;
+    height: 100px;
+}
+
+.stripe-icon img{
+    width: 100%;
+}
+
+.inner-stripe-1{
+    padding: 25px;
+    height: 120px;
+    background: #ffc933;
+}
+
+.inner-stripe-2{
+    padding: 25px;
+    background: #F2AB26;
+    height: 120px;
+}
+
+.inner-stripe-3{
+    padding: 25px;
+    background: #ffc933;
+    height: 120px;
+}
+
+hr.left-short{
+    width: 80px;
+    border-top: 3px solid #F2AB26;
+    margin: 15px 0px 15px 0px;
+}
+
+.construction-services{
+    background: #FFFF;
+    height: 260px;
+    padding: 40px 20px 0px 20px;
+    margin: 15px 0px 15px 0px;
+}
+
+.construction-services .service-icon{
+    width: 50px;
+    height: 50px;
+    margin: auto;
+}
+
+.construction-services .service-icon img{
+    width: 100%;
+}
+
+.construction-services h6{
+    text-align: center;
+    margin: 15px 0px 10px 0px;
+    font-weight: 600;
+}
+
+.construction-services p{
+    text-align: center;
+    font-size: 13px;
+    color: #808080;
+}
+
+
+@media (max-width:1200px) {
+.inner-quick-services{
+    margin: 10px;
+}
+    
+.inner-stripe-1, .inner-stripe-2, .inner-stripe-3{
+    padding: 30px 15px 30px 15px;
+    height: 100%;
+}
+    
+.stripe-icon{
+    height: 80px;
+}
+    
+}
+
+@media (max-width:1100px) {
+    
+.about-frontpage{
+    margin-top: 0px;
+}
+    
+.inner-quick-services{
+    margin: 5px;
+}
+
+.inner-quick-services p{
+    margin: 0px;
+    line-height: 1.4;
+}
+    
+}
+
+
+
+
+@media (max-width:992px) {
+.carousel-caption h1{
+    font-size: 40px;
+}
+
+.carousel-caption p{
+    font-size: 17px;
+}
+    
+.inner-stripe-1, .inner-stripe-2, .inner-stripe-3{
+    padding: 30px;
+    height: 100%;
+}
+    
+.about-frontpage{
+    margin-top: 30px;
+}
+    
+.construction-services{
+    background: #FFFF;
+    height: 100%;
+    padding: 40px 20px 60px 20px;
+    margin: 15px 0px 15px 0px;
+}
+ 
+}
+
+@media (max-width:768px) {
+.carousel-caption h1{
+    font-size: 35px;
+}
+    
+.main-slider{
+    height: 520px;
+}
+    
+.carousel-inner {
+  height: 520px;
+}
+    
+.carousel-caption{
+    padding-bottom:120px;
+}
+    
+.carousel-control.left, .carousel-control.right {
+    background-image: none;
+    margin-top: 60px;
+}
+
+  
+}
+
+@media (max-width:576px) {
+.carousel-caption h1{
+    font-size: 25px;
+}
+.carousel-caption p{
+    font-size: 14px;
+}
+    
+.btn, .btn-large {
+  padding: 4px 12px;
+  font-size: 14px;
+}
+    
+.inner-quick-services h5{
+    font-size: 16px;
+}
+    
+}

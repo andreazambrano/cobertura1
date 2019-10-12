@@ -1,0 +1,236 @@
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+/* ==========================================================================
+   	COMING SOON 1
+   ========================================================================== */
+
+.wrapper {
+    background-image: url('../img/images/coming-soon-bg.jpg');
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    color: #FFF;
+    font-size: 25px;
+}
+
+.topleft {
+    position: absolute;
+    top: 30px;
+    left: 16px;
+    height: 50px;
+}
+
+.topleft .nav-logo img{
+    height: 100%;
+}
+
+.bottomleft {
+    position: absolute;
+    bottom: 30px;
+    left: 16px;
+}
+
+.middle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.middle p{
+    color: #FFF;
+}
+
+.middle h1{
+    font-size: 45px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.middle .subscribe-footer{
+    width: 70%;
+    margin: auto;
+    margin-top: 50px;
+}
+
+/* ==========================================================================
+   	COMING SOON 2
+   ========================================================================== */
+
+.bgimg {
+    background-image: url('../img/images/img30.jpg');
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    color: white;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 25px;
+}
+
+.middle-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.middle-label{
+    width: 80%;
+    margin: auto;
+}
+
+.middle-label h1{
+    font-size: 70px;
+}
+
+.middle-label p{
+    color: #FFF;
+}
+
+.bottom-social {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.bottom-social p{
+    color: #FFF;
+    text-align: center;
+}
+
+.bottom-social a:link {
+    text-decoration: none;
+    color: #FFF;
+}
+
+.bottom-social a:visited {
+    text-decoration: none;
+    color: #FFF;
+}
+
+.bottom-social a:hover {
+    text-decoration: none;
+    color: #F2AB26;
+}
+
+.bottom-social a:active {
+    text-decoration: none;
+    color: #FFF;
+}
+
+/* ==========================================================================
+   	MEDIA QUERIES MODULE.
+   ========================================================================== */
+@media (max-width:1300px) {  
+
+.middle-label{
+    width: 80%;
+    margin: auto;
+}
+
+.middle-label h1{
+    font-size: 50px;
+}
+
+}
+
+
+@media (max-width:992px) {  
+.topleft {
+     width: 100px;
+}
+    
+.middle h1{
+    font-size: 35px;
+}
+    
+.middle .subscribe-footer{
+    width: 100%;
+    margin: auto;
+    margin-top: 30px;
+}
+    
+.middle .newsletter-box .button {
+  	width: 40%;
+    font-size: 11px;
+}
+    
+ .middle .newsletter-box .input {
+  	width: 65%;
+  	height: 38px;
+  	background: #FDFCFB;
+  	border: none;
+  	font-family: inherit;
+  	color: #737373;
+  	letter-spacing: 1px;
+  	text-indent: 5%;
+  	font-size: 11px;
+	font-family: 'Open Sans', sans-serif;
+}
+    
+.middle-label{
+    width: 100%;
+    margin: auto;
+}
+
+.middle-label h1{
+    font-size: 40px;
+}
+    
+}
+
+@media (max-width:576px) { 
+.middle h1{
+    font-size: 24px;
+    line-height: 1.2;
+}
+        
+.form-container{
+  margin: 20px 0px 20px 0px;
+}
+    
+.middle-label h1{
+    font-size: 30px;
+}
+
+.middle-logo{
+    width: 200px;
+    margin: auto;
+}
+    
+.middle-logo img{
+    width: 100%;
+}
+    
+.middle-label p{
+    font-size: 13px;
+}
+
+}
+
+@media (max-width:450px) { 
+.middle h1{
+    font-size: 24px;
+    line-height: 1.2;
+}
+  
+.middle {
+    position: absolute;
+    top: 30%;
+    left: 20px;
+    right: 20px;
+    transform: translate(0%, 0%);
+    text-align: center;
+}
+    
+}
+
+

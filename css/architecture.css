@@ -1,0 +1,484 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald|Roboto+Condensed|Archivo+Narrow');
+@font-face {
+    font-family: Aileron-Heavy;
+    src: url('../fonts/Aileron-Heavy.otf');
+}
+
+@font-face {
+    font-family: Aileron-Regular;
+    src: url('../fonts/Aileron-Regular.otf');
+}
+
+/* ==========================================================================
+   CAROUSEL. 
+   ========================================================================== */
+.main-slider{
+    z-index: 0;
+    height: 850px;
+}
+
+.main-nav{
+    z-index: 2; 
+}
+
+.carousel,
+.item,
+.active {
+    height: 100%;
+}
+
+.carousel-caption h1{
+    font-size: 50px;
+    font-family: Aileron-Heavy;
+    text-align: left;
+    text-decoration: none;
+}
+
+.carousel-caption p{
+    font-size: 18px;
+    font-family: Aileron-Regular;
+    margin-bottom: 20px;
+    text-align: left;
+    color: #FFF;
+}
+
+.carousel-inner {
+    height: 850px;
+    background: #000;
+}
+
+.carousel-caption{
+    padding-bottom:310px;
+}
+
+.fill {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+.btn-transparent {
+  background: transparent;
+  color: #F2A81D;
+  border: 2px solid #F2A81D;
+  transition: 0.3s;
+}
+.btn-transparent:hover {
+  background-color: #fff;
+    border: 2px solid #FFF;
+}
+
+.btn-large {
+  padding: 8px 22px;
+  font-size: 18px;
+}
+
+.inner-btn{
+    text-align: left;
+    display: inline-block;
+    margin-right: 20px;
+    float: left;
+}
+
+.btn-transparent {
+  color: #FFF;
+  background-color: transparent;
+  border-color: #FFF;
+  transition: 0.3s;
+}
+.btn-transparent:focus,
+.btn-transparent.focus {
+  color: #FFF;
+  background-color: #F2AB26;
+  border-color: #F2AB26;
+}
+.btn-transparent:hover {
+  color: #FFF;
+  background-color: #F2AB26;
+  border-color: #F2AB26;
+}
+.btn-transparent:active,
+.btn-transparent.active,
+.open > .dropdown-toggle.btn-transparent {
+  color: #FFF;
+  background-color: #F2AB26;
+  border-color: #F2AB26;
+}
+
+
+.animated {
+  -webkit-animation-duration: 1.5s;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fadeInRight {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(100px, 0, 0);
+    transform: translate3d(100px, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(100px, 0, 0);
+    transform: translate3d(100px, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+.fadeInRight {
+  -webkit-animation-name: fadeInRight;
+  animation-name: fadeInRight;
+}
+
+.carousel-indicators {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  z-index: 15;
+  width: 60%;
+  padding-left: 0;
+  margin-left: -30%;
+  text-align: center;
+  list-style: none;
+}
+.carousel-indicators li {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  margin: 1px;
+  text-indent: -999px;
+  cursor: pointer;
+  background-color: #000 \9;
+  background-color: rgba(0, 0, 0, 0);
+  border: 2px solid #fff;
+  border-radius: 10px;
+}
+.carousel-indicators .active {
+  width: 17px;
+  height: 17px;
+  margin: 0;
+  background: #fff;
+  border: #fff solid 2px;
+}
+
+.left .carousel-control .icon-prev{
+    color: #F2A81D;
+}
+
+.carousel-control.left, .carousel-control.right {
+    background-image: none
+}
+
+.grid {
+	position: relative;
+	margin: 0 auto;
+	padding: 0em;
+	list-style: none;
+	text-align: center;
+}
+
+/* Common style */
+.grid figure {
+	position: relative;
+	float: left;
+	overflow: hidden;
+	background: #3085a3;
+	text-align: center;
+	cursor: pointer;
+    margin: 0px 2px 0px 2px;
+}
+
+.grid figure img {
+	position: relative;
+	display: block;
+	min-height: 100%;
+	max-width: 100%;
+	opacity: 0.8;
+}
+
+.grid figure figcaption {
+	padding: 2em;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 1.25em;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+.grid figure figcaption::before,
+.grid figure figcaption::after {
+	pointer-events: none;
+}
+
+.grid figure figcaption,
+.grid figure figcaption > a {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+/* Anchor will cover the whole item by default */
+/* For some effects it will show as a button */
+.grid figure figcaption > a {
+	z-index: 1000;
+	text-indent: 200%;
+	white-space: nowrap;
+	font-size: 0;
+	opacity: 0;
+}
+
+.grid figure h3 {
+	font-weight: 300;
+}
+
+.grid figure h3 span {
+	font-weight: 800;
+}
+
+.grid figure h3,
+.grid figure p {
+	margin: 0;
+}
+
+.grid figure p {
+	font-size: 14px;
+    color: #FFF;
+}
+
+
+figure.effect-romeo {
+	-webkit-perspective: 1000px;
+	perspective: 1000px;
+}
+
+figure.effect-romeo img {
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	-webkit-transform: translate3d(0,0,300px);
+	transform: translate3d(0,0,300px);
+}
+
+figure.effect-romeo:hover img {
+	opacity: 0.6;
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+
+figure.effect-romeo figcaption::before,
+figure.effect-romeo figcaption::after {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 80%;
+	height: 1px;
+	background: #fff;
+	content: '';
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	-webkit-transform: translate3d(-50%,-50%,0);
+	transform: translate3d(-50%,-50%,0);
+}
+
+figure.effect-romeo:hover figcaption::before {
+	opacity: 0.5;
+	-webkit-transform: translate3d(-50%,-50%,0) rotate(45deg);
+	transform: translate3d(-50%,-50%,0) rotate(45deg);
+}
+
+figure.effect-romeo:hover figcaption::after {
+	opacity: 0.5;
+	-webkit-transform: translate3d(-50%,-50%,0) rotate(-45deg);
+	transform: translate3d(-50%,-50%,0) rotate(-45deg);
+}
+
+figure.effect-romeo h3,
+figure.effect-romeo p {
+	position: absolute;
+	top: 50%;
+	left: 0;
+	width: 100%;
+	-webkit-transition: -webkit-transform 0.35s;
+	transition: transform 0.35s;
+}
+
+figure.effect-romeo h3 {
+	-webkit-transform: translate3d(0,-50%,0) translate3d(0,-150%,0);
+	transform: translate3d(0,-50%,0) translate3d(0,-150%,0);
+}
+
+figure.effect-romeo p {
+	padding: 0px 10px 0px 10px;
+	-webkit-transform: translate3d(0,-50%,0) translate3d(0,150%,0);
+	transform: translate3d(0,-50%,0) translate3d(0,150%,0);
+}
+
+figure.effect-romeo:hover h3 {
+	-webkit-transform: translate3d(0,-50%,0) translate3d(0,-100%,0);
+	transform: translate3d(0,-50%,0) translate3d(0,-100%,0);
+}
+
+figure.effect-romeo:hover p {
+	-webkit-transform: translate3d(0,-50%,0) translate3d(0,100%,0);
+	transform: translate3d(0,-50%,0) translate3d(0,100%,0);
+}
+
+.architecture-about{
+    margin-top: 20px;
+}
+
+.architecture-about h6{
+    text-transform: uppercase;
+    color: #F2AB26;
+}
+
+.architecture-about h1{
+    line-height: 1.2;
+    margin: 5px 0px 20px 0px;
+}
+
+.architecture-about p{
+    line-height: 1.8;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.no-padding{
+    padding: 0px;
+}
+
+.box-architecture h3{
+    line-height: 2;
+}
+
+.box-architecture{
+    text-align: center;
+    margin: 20px 0px 20px 0px;
+}
+
+.architecture-icon {
+    width: 60px;
+    margin: auto;
+}
+
+.architecture-icon img{
+    width: 100%;
+}
+
+.architecture-intro img{
+    width: 100%;    
+}
+
+.about-architecture{
+    margin-top: 15px;
+}
+
+.about-architecture h6{
+    font-size: 16px;
+    color: #F0542D;
+}
+
+.about-architecture p{
+    line-height: 1.8;
+    margin: 10px 0px 20px 0px;
+}
+
+
+
+@media (max-width:1100px) {
+figure.effect-romeo p {
+	position: absolute;
+	top: 35%;
+}
+
+}
+
+@media (max-width:992px) {
+.carousel-caption h1{
+    font-size: 40px;
+}
+
+.carousel-caption p{
+    font-size: 17px;
+}
+    
+.no-margin-top{
+    margin: 0px 0px 30px 0px;
+}
+    
+.about-architecture{
+    margin-top: 30px;
+}
+    
+.no-margin-top{
+    margin: 0px 0px 30px 0px;
+}
+    
+figure.effect-romeo p {
+	position: absolute;
+	top: 50%;
+}
+    
+.architecture-about{
+    margin: 0px 0px 30px 0px;
+}
+     
+}
+
+@media (max-width:768px) {
+.carousel-caption h1{
+    font-size: 35px;
+}
+    
+.main-slider{
+    height: 520px;
+}
+    
+.carousel-inner {
+  height: 520px;
+}
+    
+.carousel-caption{
+    padding-bottom:120px;
+}
+    
+.carousel-control.left, .carousel-control.right {
+    background-image: none;
+    margin-top: 60px;
+}
+  
+}
+
+@media (max-width:576px) {
+.carousel-caption h1{
+    font-size: 25px;
+}
+.carousel-caption p{
+    font-size: 14px;
+}
+    
+.btn, .btn-large {
+  padding: 4px 12px;
+  font-size: 14px;
+}
+    
+}
